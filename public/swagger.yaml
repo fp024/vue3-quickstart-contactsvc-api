@@ -3,7 +3,7 @@ info:
   title: 연락처 서비스 API
   description: 테스트용으로 만든 간단한 API입니다. 매일 새벽2시에 데이터가 초기화되어 100개의 연락처만 남습니다.
   version: 1.0.0
-host: sample.bmaster.kro.kr
+host: localhost:3000
 schemes:
   - http
 basePath: /
@@ -32,7 +32,7 @@ paths:
         - 연락처리스트 조회
       responses:
         '200':
-          description: 연락처목록을 포함한 JSON Doucment
+          description: 연락처목록을 포함한 JSON Document
           schema:
             $ref: '#/definitions/ContactList'
         default:
@@ -235,7 +235,7 @@ paths:
         - 연락처리스트 조회
       responses:
         '200':
-          description: 연락처목록을 포함한 JSON Doucment
+          description: 연락처목록을 포함한 JSON Document
           schema:
             $ref: '#/definitions/ContactList'
         default:
