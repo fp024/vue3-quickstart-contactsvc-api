@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 이미지 및 컨테이너 이름 설정
-PROJECT_NAME=vue3-quickstart-contactsvc-api
+PROJECT_NAME=$(cat project-name.txt)
 
 # 실행 중인 컨테이너 정지 및 제거
 docker stop $PROJECT_NAME
